@@ -59,6 +59,8 @@ impl LastQuotesReqInit {
 
 /// A quote as returned by the /v2/stocks/quotes/latest endpoint.
 // TODO: Not all fields are hooked up.
+// TODO: Given that this struct is shared, consider moving it into a
+//       more neutral position.
 #[derive(Clone, Debug, Deserialize, Eq, PartialEq)]
 #[non_exhaustive]
 pub struct Quote {
